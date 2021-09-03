@@ -25,4 +25,4 @@ def gcd_extended(a, b) -> tuple:
 if __name__ == "__main__":
 
     # takes command line input, parses it before and after computing (x, y) and prints them
-    print(" ".join(map(str, gcd_extended(*map(int, sys.argv[1:])))))
+    print(" ".join(map(str, gcd_extended(*map(int, sys.argv[1:])))), end="")

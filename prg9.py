@@ -80,4 +80,4 @@ def order(a, m):
 if __name__ == "__main__":
 
     # takes command line input, parses it before and after computing the order then prints it
-    print(order(int(sys.argv[1]), int(sys.argv[2])))
+    print(order(int(sys.argv[1]), int(sys.argv[2])), end="")

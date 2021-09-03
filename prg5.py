@@ -90,4 +90,4 @@ def fermat(a, x, n) -> int:
 if __name__ == "__main__":
 
     # takes command line input, parses it before and after computing the solution then prints it
-    print(fermat(*[int(i) for i in sys.argv[1:]]))
+    print(fermat(*[int(i) for i in sys.argv[1:]]), end="")

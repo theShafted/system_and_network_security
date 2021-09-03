@@ -43,4 +43,4 @@ def mul_inverse(a, m) -> int or str:
 if __name__ == "__main__":
 
     # takes command line input, parses it before and after computing the inverse then prints it
-    print(mul_inverse(int(sys.argv[1]), int(sys.argv[2])))
+    print(mul_inverse(int(sys.argv[1]), int(sys.argv[2])), end="")

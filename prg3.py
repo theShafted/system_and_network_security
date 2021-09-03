@@ -42,4 +42,4 @@ def fta(num) -> tuple:
 if __name__ == "__main__":
 
     # takes command line input, parses it before and after computing the primes and prints them
-    print(" ".join(map(str, fta(int(sys.argv[1])))))
+    print(" ".join(map(str, fta(int(sys.argv[1])))), end="")

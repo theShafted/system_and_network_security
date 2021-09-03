@@ -37,4 +37,4 @@ if __name__ == "__main__":
     result = rrsm(int(sys.argv[1]))
 
     # prints the elements in rrsm m and the value of phi(m)
-    print(" ".join(map(str, result)) + f" {len(result)}")
+    print(" ".join(map(str, result)) + f" {len(result)}", end="")

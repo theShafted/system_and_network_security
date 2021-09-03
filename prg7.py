@@ -31,7 +31,7 @@ def congurence_solution(a, b, m) -> tuple:
     if b <= 0 or b % g != 0:
 
         # prints "N" as no solutions exist and returns
-        print("N")
+        print("N", end="")
         return 
 
     # prints "Y" because solution/s exist
@@ -64,4 +64,4 @@ if __name__ == "__main__":
     if solutions:
 
         # prints the number of solutions and them after parsing
-        print(f"{len(solutions)} " + " ".join(map(str, solutions)))
+        print(f"{len(solutions)} " + " ".join(map(str, solutions)), end="")

@@ -1,5 +1,4 @@
 import sys
-from math import prod
 
 # calculates gcd and its linear combo. according to the extended euclidean algorithm
 def gcd(x, y, extended=False) -> int or tuple:
@@ -27,7 +26,9 @@ def chinese_remainder_theorem(a, b, m) -> int:
             if i != j and gcd(m[i], m[j]) != 1:
                 return "N"
 
-    M = prod(m)
+    M = 1
+    for num in m:
+        M *= num
 
     # converts to the standard form by inversing the coeff. of x
     a = [b[i] * gcd(a[i], m[i], extended=True)[1] for i in range(length)]
@@ -50,4 +51,4 @@ if __name__ == "__main__":
         args[(i - 2) % 3].append(int(sys.argv[i]))
 
     # prints the solution to the system of congurences using the crt
-    print(chinese_remainder_theorem(*args))
+    print(chinese_remainder_theorem(*args), end="")

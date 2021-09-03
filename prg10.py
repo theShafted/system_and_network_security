@@ -118,8 +118,10 @@ if __name__ == "__main__":
     # computes the primitive roots (if any) using the user defined function
     roots = primitive_root(int(sys.argv[1]))
 
+    # prints the number of roots
+    print(len(roots), end="")
+
     # checks if there are any primitive roots exist
     if roots:
-        # prints the number of roots followed by the roots after parsing the solution
-        print(len(roots), end=" ")
-        print(" ".join(map(str, roots)))
+        # prints the roots after parsing the solution
+        print(" " + " ".join(map(str, roots)), end="")

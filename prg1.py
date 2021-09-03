@@ -51,4 +51,4 @@ def common_divisors(args) -> tuple:
 if __name__ == "__main__":
 
     # takes command line input, parses it before and after computing the common divisors and prints them
-    print(" ".join(map(str, common_divisors([int(num) for num in sys.argv[2:]]))))
+    print(" ".join(map(str, common_divisors([int(num) for num in sys.argv[2:]]))), end="")
